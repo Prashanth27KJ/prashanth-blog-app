@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connDB = () => {
   mongoose
-    .connect(process.env.MONGO_URL, {
+    .connect(process.env.MONGO_URI, {
       // useCreateIndex: true,
       // useFindAndModify: false,
       useNewUrlParser: true,
